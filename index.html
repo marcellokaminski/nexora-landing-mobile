@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>Nexora | Automatización e Inteligencia Artificial para Empresas en Argentina</title>
+  <meta name="description" content="Nexora implementa agentes de IA, chatbots para WhatsApp, automatizaciones y sistemas inteligentes que reducen costos, mejoran la atención al cliente y aumentan las ventas. Buenos Aires, Argentina." />
+  <meta name="keywords" content="automatización, inteligencia artificial, agentes IA, chatbots, automatización WhatsApp, automatización para empresas, Argentina, Buenos Aires, reducir costos, aumentar ventas" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Nexora" />
+  <link rel="canonical" href="https://nexora.ar/" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://nexora.ar/" />
+  <meta property="og:title"       content="Nexora | Automatización e Inteligencia Artificial para Empresas" />
+  <meta property="og:description" content="Automatizamos tareas repetitivas para que tu empresa venda más, ahorre tiempo y funcione 24/7 con agentes de IA y chatbots inteligentes." />
+  <meta property="og:image"       content="https://nexora.ar/assets/og-image.png" />
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ── CSS ── -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+
+<!-- ════════════════════════════════════
+     NAV
+════════════════════════════════════ -->
+<nav>
+  <a href="#hero" class="nav-logo">
+    <img src="assets/logo.png" alt="Nexora — Automatización e Inteligencia Artificial" class="nav-logo-img" />
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#que-automatizamos">Automatización</a></li>
+    <li><a href="#beneficios">Beneficios</a></li>
+    <li><a href="#proceso">Cómo trabajamos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+
+  <a href="https://wa.me/5491100000000?text=Hola%20Nexora%2C%20quiero%20información%20sobre%20sus%20servicios%20de%20automatización" target="_blank" class="nav-wa-btn">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#servicios"        onclick="closeMobile()">Servicios</a>
+  <a href="#que-automatizamos" onclick="closeMobile()">Automatización</a>
+  <a href="#beneficios"       onclick="closeMobile()">Beneficios</a>
+  <a href="#proceso"          onclick="closeMobile()">Cómo trabajamos</a>
+  <a href="#contacto"         onclick="closeMobile()">Contacto</a>
+  <a href="https://wa.me/5491100000000?text=Hola%20Nexora%2C%20quiero%20información" target="_blank" class="btn-wa" onclick="closeMobile()">💬 Hablar por WhatsApp</a>
+</div>
+
+
+<!-- ════════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content reveal">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      IA · Automatización · Resultados
+    </div>
+
+    <h1>
+      Automatizamos ventas, atención y procesos
+      <em>para que tu empresa crezca 24/7.</em>
+    </h1>
+
+    <p class="hero-sub">
+      Implementamos agentes de IA, automatizaciones y sistemas inteligentes que reducen costos,
+      mejoran la atención al cliente y aumentan la productividad de tu equipo.
+    </p>
+
+    <div class="hero-btns">
+      <a href="https://wa.me/5491100000000?text=Hola%20Nexora%2C%20quiero%20información%20sobre%20sus%20servicios%20de%20automatización" target="_blank" class="btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Hablar por WhatsApp
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">+200<span>%</span></div>
+        <div class="hero-stat-label">Aumento de productividad</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">24<span>/7</span></div>
+        <div class="hero-stat-label">Atención automática</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">-60<span>%</span></div>
+        <div class="hero-stat-label">Reducción de costos operativos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phone mockup -->
+  <div class="hero-visual">
+    <svg class="phone-glow" viewBox="0 0 260 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="258" height="458" rx="32" fill="#0d1117" stroke="rgba(59,130,246,0.4)" stroke-width="1.5"/>
+      <rect x="10" y="10" width="240" height="440" rx="26" fill="#111827"/>
+      <text x="20" y="36" fill="rgba(255,255,255,0.5)" font-size="11" font-family="Inter">9:41</text>
+      <rect x="10" y="48" width="240" height="52" fill="#1e293b"/>
+      <circle cx="32" cy="74" r="12" fill="#283447"/>
+      <path d="M26 70a6 6 0 1 1 9 5.2L37 78l-2.7-1.8A6 6 0 0 1 26 70z" fill="#22d3ee"/>
+      <text x="52" y="70" fill="white" font-size="12" font-weight="600" font-family="Inter">Nexora IA</text>
+      <text x="52" y="84" fill="#22d3ee" font-size="10" font-family="Inter">● En línea</text>
+      <rect x="20" y="118" width="148" height="42" rx="14" fill="#1e293b"/>
+      <text x="34" y="136" fill="rgba(255,255,255,0.9)" font-size="11" font-family="Inter">¡Hola! 👋 Gracias por</text>
+      <text x="34" y="151" fill="rgba(255,255,255,0.9)" font-size="11" font-family="Inter">contactarnos.</text>
+      <rect x="20" y="170" width="190" height="42" rx="14" fill="#1e293b"/>
+      <text x="34" y="188" fill="rgba(255,255,255,0.9)" font-size="11" font-family="Inter">¿En qué podemos ayudarte</text>
+      <text x="34" y="203" fill="rgba(255,255,255,0.9)" font-size="11" font-family="Inter">hoy?</text>
+      <rect x="72" y="222" width="168" height="34" rx="14" fill="rgba(59,130,246,0.8)"/>
+      <text x="88" y="244" fill="white" font-size="11" font-family="Inter">Quiero automatizar ventas</text>
+      <rect x="20" y="268" width="200" height="54" rx="14" fill="#1e293b"/>
+      <text x="34" y="286" fill="rgba(255,255,255,0.9)" font-size="11" font-family="Inter">¡Perfecto! Puedo configurar</text>
+      <text x="34" y="301" fill="rgba(255,255,255,0.9)" font-size="11" font-family="Inter">tu agente de IA en 48hs.</text>
+      <text x="34" y="315" fill="#22d3ee" font-size="11" font-family="Inter">¿Agendamos una llamada?</text>
+      <circle cx="32" cy="348" r="5" fill="rgba(59,130,246,0.6)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="46" cy="348" r="5" fill="rgba(59,130,246,0.6)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" begin="0.3s" repeatCount="indefinite"/></circle>
+      <circle cx="60" cy="348" r="5" fill="rgba(59,130,246,0.6)"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" begin="0.6s" repeatCount="indefinite"/></circle>
+      <rect x="10" y="390" width="240" height="60" fill="#1e293b"/>
+      <rect x="20" y="402" width="180" height="36" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <text x="36" y="425" fill="rgba(148,163,184,0.5)" font-size="11" font-family="Inter">Escribe un mensaje...</text>
+      <circle cx="226" cy="420" r="14" fill="rgba(59,130,246,0.9)"/>
+      <text x="220" y="425" fill="white" font-size="16">➤</text>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     SERVICIOS
+════════════════════════════════════ -->
+<section class="services-section" id="servicios">
+  <div class="text-center reveal">
+    <span class="section-label">Lo que hacemos</span>
+    <h2 class="section-title">Soluciones de IA para cada área de tu negocio</h2>
+    <p class="section-sub">Diseñamos e implementamos sistemas inteligentes que trabajan por vos, para que puedas enfocarte en crecer.</p>
+  </div>
+
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v4H4zM4 12h16v4H4zM4 20h8"/><circle cx="18" cy="20" r="2"/><path d="M18 17v1M18 22v1M15.27 18.27l.73.73M20.73 21.73l.73.73M15 20H14M22 20h-1"/></svg>
+      </div>
+      <h3>Automatización de Procesos</h3>
+      <p>Eliminamos tareas repetitivas mediante flujos inteligentes y automatizaciones personalizadas que liberan el tiempo de tu equipo.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <h3>Chatbots IA para WhatsApp</h3>
+      <p>Atención automática 24/7 para clientes, ventas y soporte directo en WhatsApp, Instagram y las plataformas que uses.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+      </div>
+      <h3>Agentes de Inteligencia Artificial</h3>
+      <p>Asistentes virtuales entrenados con el conocimiento de tu empresa, capaces de responder, vender y gestionar procesos autónomamente.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      </div>
+      <h3>Desarrollo Web</h3>
+      <p>Sitios web modernos, rápidos y optimizados para convertir visitantes en clientes, con diseño a medida de tu marca.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M2 12h3M19 12h3M12 2v3M12 19v3M5.64 5.64l2.12 2.12M16.24 16.24l2.12 2.12M5.64 18.36l2.12-2.12M16.24 7.76l2.12-2.12"/></svg>
+      </div>
+      <h3>Integraciones Empresariales</h3>
+      <p>Conectamos sistemas, aplicaciones y plataformas para que tu empresa trabaje de forma unificada y sincronizada en tiempo real.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Ciberseguridad</h3>
+      <p>Protección de infraestructura, auditorías y buenas prácticas de seguridad informática para mantener tu empresa siempre protegida.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     QUÉ PODEMOS AUTOMATIZAR
+════════════════════════════════════ -->
+<section class="automate-section" id="que-automatizamos">
+  <div class="text-center reveal">
+    <span class="section-label">Automatización</span>
+    <h2 class="section-title">¿Qué podemos automatizar?</h2>
+    <p class="section-sub">Si tu equipo repite una tarea más de tres veces por semana, ya puede ser automatizada. Estas son las más comunes:</p>
+  </div>
+
+  <div class="automate-grid reveal">
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <h4>Atención al cliente por WhatsApp</h4>
+      <p>Respondé consultas al instante sin intervención humana, las 24hs del día.</p>
+    </div>
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <h4>Respuesta automática de consultas</h4>
+      <p>El agente de IA responde preguntas frecuentes con precisión y en tiempo real.</p>
+    </div>
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </div>
+      <h4>Gestión de turnos y reservas</h4>
+      <p>Agendá citas automáticamente con confirmaciones y recordatorios sin intervención manual.</p>
+    </div>
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <h4>Seguimiento de clientes</h4>
+      <p>CRM automático que registra, clasifica y hace seguimiento de cada prospecto.</p>
+    </div>
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <h4>Ventas automáticas</h4>
+      <p>Convertí consultas en ventas con flujos de conversación diseñados para cerrar negocios.</p>
+    </div>
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+      </div>
+      <h4>Recordatorios y notificaciones</h4>
+      <p>Mensajes automáticos de seguimiento, cobranza o información a tu lista de clientes.</p>
+    </div>
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h4>Soporte técnico automatizado</h4>
+      <p>Resolvé problemas frecuentes de tus clientes sin necesitar un agente humano.</p>
+    </div>
+    <div class="automate-card">
+      <div class="automate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 17H7A5 5 0 017 7h2M15 7h2a5 5 0 010 10h-2M8 12h8"/></svg>
+      </div>
+      <h4>Procesos administrativos</h4>
+      <p>Facturación, reportes, carga de datos y tareas repetitivas sin esfuerzo humano.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     BENEFICIOS
+════════════════════════════════════ -->
+<section class="benefits-section" id="beneficios">
+  <div class="text-center reveal">
+    <span class="section-label">Beneficios</span>
+    <h2 class="section-title">¿Por qué automatizar con Nexora?</h2>
+    <p class="section-sub">Resultados concretos desde el día uno. Cada solución está diseñada para impactar directamente en tu operación.</p>
+  </div>
+
+  <div class="benefits-grid reveal">
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <div>
+        <h4>Menos trabajo manual</h4>
+        <p>Reducí horas de tareas repetitivas y liberá a tu equipo para lo que realmente importa.</p>
+      </div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div>
+        <h4>Más productividad</h4>
+        <p>Procesos optimizados que multiplican la capacidad operativa sin aumentar costos.</p>
+      </div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div>
+        <h4>Atención 24/7</h4>
+        <p>Tus clientes reciben respuestas instantáneas a cualquier hora, todos los días del año.</p>
+      </div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div>
+        <h4>Menos errores operativos</h4>
+        <p>Los procesos automatizados eliminan el error humano y garantizan consistencia.</p>
+      </div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <div>
+        <h4>Escalabilidad</h4>
+        <p>Sistemas que crecen con tu negocio sin necesidad de ampliar el equipo proporcionalmente.</p>
+      </div>
+    </div>
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+      </div>
+      <div>
+        <h4>Implementación rápida</h4>
+        <p>En 48 a 72hs tenés tu primer agente funcionando. Sin complicaciones técnicas de tu parte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     PROCESO
+════════════════════════════════════ -->
+<section class="process-section" id="proceso">
+  <div class="text-center reveal">
+    <span class="section-label">Cómo trabajamos</span>
+    <h2 class="section-title">Un proceso simple, resultados reales</h2>
+    <p class="section-sub">De la idea a la ejecución en cuatro pasos claros. Sin tecnicismos, sin sorpresas.</p>
+  </div>
+
+  <div class="process-steps reveal">
+    <div class="process-step">
+      <span class="process-num">PASO 01</span>
+      <div class="process-dot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      </div>
+      <h3>Analizamos tu negocio</h3>
+      <p>Entendemos tu operación, tus puntos de dolor y tus objetivos para diseñar la solución correcta.</p>
+    </div>
+    <div class="process-step">
+      <span class="process-num">PASO 02</span>
+      <div class="process-dot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      </div>
+      <h3>Detectamos tareas repetitivas</h3>
+      <p>Identificamos qué procesos consumen más tiempo y cuáles pueden automatizarse de inmediato.</p>
+    </div>
+    <div class="process-step">
+      <span class="process-num">PASO 03</span>
+      <div class="process-dot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <h3>Diseñamos la automatización</h3>
+      <p>Creamos el flujo, entrenamos el agente y configuramos cada detalle según tu negocio.</p>
+    </div>
+    <div class="process-step">
+      <span class="process-num">PASO 04</span>
+      <div class="process-dot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <h3>Implementamos y optimizamos</h3>
+      <p>Lanzamos el sistema, medimos resultados y mejoramos continuamente para maximizar el impacto.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     DIAGNÓSTICO GRATUITO
+════════════════════════════════════ -->
+<section class="diagnosis-section" id="diagnostico">
+  <div class="diagnosis-inner reveal">
+    <span class="section-label">Diagnóstico gratuito</span>
+    <h2 class="section-title">Descubrí cuánto tiempo y dinero<br>podés ahorrar con IA</h2>
+    <p>Analizamos tu negocio y te mostramos exactamente qué procesos pueden automatizarse para reducir costos y aumentar ventas, sin compromiso.</p>
+
+    <ul class="diagnosis-list">
+      <li>Análisis de procesos repetitivos de tu empresa</li>
+      <li>Identificación de oportunidades de automatización</li>
+      <li>Estimación de tiempo y dinero que podés ahorrar</li>
+      <li>Propuesta personalizada sin costo</li>
+    </ul>
+
+    <a href="https://wa.me/5491100000000?text=Hola%20Nexora%2C%20quiero%20solicitar%20mi%20diagnóstico%20gratuito" target="_blank" class="btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Solicitar diagnóstico gratuito
+      </a>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     FAQ
+════════════════════════════════════ -->
+<section class="faq-section" id="contacto">
+  <div class="text-center reveal">
+    <span class="section-label">Preguntas frecuentes</span>
+    <h2 class="section-title">Todo lo que necesitás saber</h2>
+  </div>
+
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Cuánto tarda una automatización?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </button>
+      <div class="faq-a">El primer agente o flujo automatizado puede estar operativo entre 48 horas y 1 semana. Los proyectos más complejos con múltiples integraciones pueden tardar entre 2 y 4 semanas.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Necesito conocimientos técnicos?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </button>
+      <div class="faq-a">No. Nos encargamos de toda la parte técnica. Vos solo necesitás contarnos cómo funciona tu negocio y qué querés mejorar. Nosotros lo hacemos realidad.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Puedo integrar WhatsApp?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </button>
+      <div class="faq-a">Sí. WhatsApp Business API es una de nuestras integraciones principales. Podemos conectar tu número con un agente de IA que atiende, califica y responde clientes de forma automática.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Qué tipo de empresas pueden utilizar estos servicios?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </button>
+      <div class="faq-a">Trabajamos con empresas de todos los rubros: comercios, servicios profesionales, educación, salud, logística, e-commerce y más. Si tenés procesos repetitivos, te podemos ayudar.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        ¿Qué pasa si ya tengo herramientas o software instalado?
+        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </button>
+      <div class="faq-a">Perfecto. Nos integramos con los sistemas que ya usás: CRMs, ERPs, Google Sheets, Notion, plataformas e-commerce y más. No necesitás cambiar nada de lo que ya tenés.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     CTA FINAL
+════════════════════════════════════ -->
+<section class="final-cta">
+  <div class="final-cta-inner reveal">
+    <span class="section-label" style="display:block; text-align:center;">¿Listo para dar el paso?</span>
+    <h2>¿Listo para automatizar tu negocio?</h2>
+    <p>Descubrí cuánto tiempo y dinero podés ahorrar implementando automatización e inteligencia artificial en tu empresa. Hablá con nuestro equipo hoy.</p>
+    <div class="final-cta-btns">
+      <a href="https://wa.me/5491100000000?text=Hola%20Nexora%2C%20quiero%20comenzar%20a%20automatizar%20mi%20negocio" target="_blank" class="btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Hablar por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo.png" alt="Nexora" class="nav-logo-img footer-logo-img" style="height:36px;" />
+      </a>
+      <p>Conectamos tecnología con resultados. Automatización e Inteligencia Artificial para empresas que quieren crecer.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="TikTok">
+          <svg viewBox="0 0 24 24" fill="rgba(148,163,184,0.7)"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.94a8.16 8.16 0 004.77 1.53V7.02a4.85 4.85 0 01-1-.33z"/></svg>
+        </a>
+        <a href="https://wa.me/5491100000000" class="social-btn" title="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="rgba(148,163,184,0.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="rgba(148,163,184,0.7)"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#que-automatizamos">Automatización</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#proceso">Cómo funciona</a></li>
+        <li><a href="#diagnostico">Diagnóstico</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de cookies</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/5491100000000">WhatsApp</a></li>
+        <li><a href="#">Instagram: @nexora_argentina</a></li>
+        <li><a href="#">TikTok: @nexora.ar</a></li>
+        <li><a href="mailto:hola@nexora.ar">hola@nexora.ar</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 Nexora. Todos los derechos reservados.</p>
+    <p>Nexora — Automatización e Inteligencia Artificial para empresas.</p>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════
+     WHATSAPP FLOAT
+════════════════════════════════════ -->
+<a href="https://wa.me/5491100000000?text=Hola%20Nexora%2C%20quiero%20información%20sobre%20sus%20servicios" target="_blank" class="whatsapp-float" title="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ── JS ── -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
