@@ -187,6 +187,7 @@ section { padding: clamp(56px, 8vw, 96px) clamp(1.5rem, 6vw, 6rem); }
   position: relative; z-index: 1;
   grid-column: 1; grid-row: 1;
   padding-right: clamp(1.5rem, 3vw, 4rem);
+  min-width: 0;
 }
 .hero-visual {
   grid-column: 2; grid-row: 1;
@@ -575,8 +576,8 @@ footer {
     align-items: center;
     text-align: center;
     min-height: auto;
-    padding-top: 100px;
-    padding-bottom: 48px;
+    padding-top: 110px;
+    padding-bottom: 70px;
     padding-left: 20px;
     padding-right: 20px;
     gap: 24px;
@@ -602,8 +603,8 @@ footer {
     font-size: 0.68rem;
   }
   .hero h1 {
-    font-size: clamp(2.4rem, 11vw, 3.2rem);
-    line-height: 1.05;
+    font-size: 2rem !important;
+    line-height: 1.15;
     text-align: center;
     max-width: 100%;
     margin-bottom: 18px;
@@ -611,7 +612,7 @@ footer {
     hyphens: none;
   }
   .hero-sub {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.6;
     text-align: center;
     max-width: 100%;
@@ -623,12 +624,12 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0;
+    align-items: stretch;
+    gap: 12px;
   }
   .btn-wa {
     width: 100%;
-    max-width: 320px;
+    max-width: 100%;
     justify-content: center;
     padding: 16px 24px;
     font-size: 1rem;
@@ -661,7 +662,6 @@ footer {
 /* ─── Very small 360px ─── */
 @media (max-width: 380px) {
   .hero { padding-left: 4vw; padding-right: 4vw; gap: 16px; }
-  .hero h1 { font-size: 1.5rem; }
   .phone-glow { width: 140px; }
   .btn-wa { max-width: 100%; }
 }
@@ -717,7 +717,7 @@ footer {
   .process-step::after { display: none; }
 
   .footer-grid    { grid-template-columns: 1fr; gap: 24px; }
-  .final-cta-btns { flex-direction: column; align-items: center; }
+  .final-cta-btns { flex-direction: column; align-items: stretch; gap: 12px; }
 
   /* Hero CTA full width */
   .hero-btns { flex-direction: column; align-items: stretch; }
@@ -738,25 +738,18 @@ footer {
   * { box-sizing: border-box; }
   img, svg, video, canvas { max-width: 100%; height: auto; }
 
-  section { padding: 40px 20px; }
+  section { padding: 70px 20px; }
 
-  /* Nav */
+  /* Nav: logo + hamburguesa únicamente, sin riesgo de superposición */
   nav {
-    height: 60px;
-    padding: 0 20px;
+    min-height: 72px;
+    padding: 0 16px;
   }
-  .nav-logo-img { height: 28px; }
-
-  /* Hero ya definido en 600px — refuerzo paddings */
-  .hero {
-    padding-top: 84px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  .nav-logo-img { height: 34px !important; width: auto; }
 
   /* Servicios: 1 columna, padding interno */
-  .services-grid  { grid-template-columns: 1fr; gap: 16px; }
-  .service-card   { padding: 24px; width: 100%; }
+  .services-grid  { grid-template-columns: 1fr; gap: 20px; }
+  .service-card   { padding: 24px; border-radius: 20px; width: 100%; }
 
   /* Automatización: 1 columna */
   .automate-grid  { grid-template-columns: 1fr; gap: 14px; }
@@ -765,10 +758,11 @@ footer {
   /* Beneficios: 1 columna */
   .benefits-grid  { grid-template-columns: 1fr; gap: 14px; }
 
-  /* Proceso: 1 columna vertical, icono arriba, texto centrado */
+  /* Proceso: cada paso ocupa el 100% del ancho */
   .process-steps {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
   }
   .process-step {
@@ -799,24 +793,8 @@ footer {
 /* ─── MOBILE: 390px e inferior (cubre Mobile 375) ─── */
 @media (max-width: 390px) {
   /* ─── 375px / 390px — ajuste fino ─── */
-  nav {
-    height: 56px;
-    padding: 0 16px;
-  }
-  .nav-logo-img { height: 26px; }
+  .hero { gap: 20px; }
 
-  section { padding: 36px 16px; }
-
-  .hero {
-    padding-top: 72px;
-    padding-left: 16px;
-    padding-right: 16px;
-    gap: 20px;
-  }
-  .hero h1 {
-    font-size: clamp(2rem, 10vw, 2.6rem);
-    line-height: 1.05;
-  }
   /* Stats siguen en columna (heredado de 480px) */
   .hero-stats {
     flex-direction: column;
@@ -828,10 +806,6 @@ footer {
     padding: 15px 20px;
     font-size: 0.95rem;
   }
-
-  /* Proceso: columna, texto centrado */
-  .process-steps { gap: 28px; }
-  .process-step::after { display: none; }
 
   .footer-grid { grid-template-columns: 1fr; }
 
